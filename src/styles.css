@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+footer{
+    display:block;
+    background-color:rgb(52,58,64);
+    color:white;
+    text-align: end;
+    
+}
