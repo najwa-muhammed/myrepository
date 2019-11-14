@@ -1,0 +1,29 @@
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="form-group">
+      <label for="formGroupExampleInput">title</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter name" formControlName="title">
+    </div> 
+    <div class="form-group">
+      <label for="formGroupExampleInput2">imageUrl</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="image"formControlName="imageUrl">
+    </div>
+    
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Description</label>
+        <textarea rows="10" cols="10" class="form-control" id="formGroupExampleInput2" placeholder="Description" formControlName="description"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="formGroupExampleInput2">price</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="price" formControlName="price">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">is available</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="is available" formControlName="isAvailable">
+      </div>
+
+      <button type="submit">send/update</button><br><br>
+      
+      
+  </form>

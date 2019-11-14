@@ -1,0 +1,16 @@
+<div>
+    <div 
+      class="card "  style="width: 20rem; margin:5px 5px;">
+      
+        <img [src]="item.imageUrl" class="card-img-top card_img"  alt="...">
+        <div class="card-body" >
+          <h5 class="card-title">{{item.title | uppercase}}</h5>
+          <p class="card-title">{{item.id}}</p>
+          <p class="card-text">{{item.description}}</p>
+          <p class="card-text">${{item.price}}</p>
+          
+          <button class="btn btn-primary"[disabled]="!item.isAvailable">Add to cart</button><br>
+          <button class="btn btn-primary" [routerLink]="['/addproduct',item.id]"  >EDIT</button>
+        </div>
+      </div>   
+</div>
